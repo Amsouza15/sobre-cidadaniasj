@@ -1,0 +1,162 @@
+/*ESTILO GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    background-color: #FFFFFF;
+    height: 100vh;
+    
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+}
+
+.flex {
+    display: flex;
+    
+}
+
+
+header a {
+    padding: 60px 0px;
+    display: inline-block;
+
+}
+
+h1.titulo {
+
+    color: rgb(13, 95, 46);
+    font-size: 38px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sobre .txt-sobre {
+    color: black;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    background-color: #22a327;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    box-shadow: 0px 0px 8px;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+/* ESTILO DO MEU RODAPE*/
+
+footer {
+    box-shadow: 0 0 40px 10px rgba(255, 106, 0, 0.185);
+    padding: 30px 4%;
+
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #106615;
+}
+
+footer .line-footer p i {
+    color: #b41111;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #090214;
+
+}
+
+@media screen and (max-width: 1020px) {
+
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+
+    /*TOPO-DO-SITE*/
+
+    h1.titulo {
+
+        color: rgb(13, 95, 46);
+        font-size: 24px;
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    section.topo-do-site.flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+
+
+    .interface img {
+        width: 50%;
+
+    }
+
+    /*SOBRE partido*/
+    section.sobre {
+        padding: 30px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    /*RODAPE*/
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+
+}
